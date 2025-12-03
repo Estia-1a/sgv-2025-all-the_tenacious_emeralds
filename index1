@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 768px)"> 
+    <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 767px)"> 
+    <title>Marché "Brasserie de la Vézère"</title>
+</head>
+<body>
+    <h1>Distribution le Jeudi 4 décembre à 18h30</h1>
+    <h1>Marché paysan - Brasserie de la Vézère la papeterie - 19140 Uzerche</h1>
+    <h1>La commande ferme dans 16 heures</h1>
+    <h1>Paiement sur place</h1>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>

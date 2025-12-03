@@ -1,0 +1,140 @@
+/* ------------------------------ */
+/*   SECTION 1 — SIDEBAR GAUCHE   */
+/* ------------------------------ */
+
+/* ------------------------------ */
+/*   SECTION 1 — SIDEBAR GAUCHE   */
+/* ------------------------------ */
+
+#section1 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 180px; /* largeur réduite */
+    height: 100vh;
+    background: #faf7ef;
+    border-right: 1px solid #e0d9c8;
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px 12px;
+    gap: 20px;
+}
+
+/* Chaque item = 1 ligne image + texte */
+#section1 .item {
+    display: flex;
+    align-items: center;
+    gap: 10px;      /* espace image ↔ texte */
+}
+
+#section1 img {
+    width: 28px;
+}
+
+#section1 h1 {
+    font-size: 14px;
+    font-weight: normal;
+    white-space: nowrap;  /* empêche la coupure */
+}
+
+
+
+
+/* ------------------------------ */
+/*   SECTION 2 — HEADER MARCHÉ    */
+/* ------------------------------ */
+
+#section2 {
+    margin-left: 200px; /* adapté à la nouvelle width */
+    padding: 20px 30px;
+    background: #f7f3e9;
+    border-bottom: 1px solid #e0dac9;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Bloc des textes (à gauche, en colonne) */
+#section2 h2 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #3b342d;
+    display: block;
+}
+
+#section2 img {
+    width: 28px;
+}
+
+/* Conteneur gauche = textes en colonne */
+#section2 .left {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Conteneur droite = loupe + texte + panier + prix */
+#section2 .right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+/* ------------------------------ */
+/*   SECTION 3 — CATÉGORIES       */
+/* ------------------------------ */
+
+#section3 {
+    margin-left: 200px;
+    padding: 20px;
+    background: #f5efe3;
+    border-bottom: 1px solid #e2dacb;
+
+    display: flex;
+    flex-wrap: nowrap;  /* toutes les catégories sur une seule ligne */
+    gap: 25px;
+}
+
+#section3 article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    text-align: center;
+}
+
+#section3 img {
+    width: 40px;
+}
+
+
+
+/* ------------------------------ */
+/*   SECTION 4 — PRODUITS         */
+/* ------------------------------ */
+
+#section4 {
+    margin-left: 200px;
+    padding: 25px 20px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+#section4 article {
+    background: #ffffff;
+    border: 1px solid #dfd5c4;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+}
+
+#section4 img {
+    width: 100%;
+    border-radius: 6px;
+}
