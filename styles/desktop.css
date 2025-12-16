@@ -2,43 +2,39 @@
 /*   SECTION 1 — SIDEBAR GAUCHE   */
 /* ------------------------------ */
 
-/* ------------------------------ */
-/*   SECTION 1 — SIDEBAR GAUCHE   */
-/* ------------------------------ */
-
 #section1 {
     position: fixed;
     left: 0;
     top: 0;
-    width: 180px; /* largeur réduite */
+    width: 260px;
     height: 100vh;
     background: #faf7ef;
     border-right: 1px solid #e0d9c8;
 
     display: flex;
     flex-direction: column;
-    padding: 20px 12px;
-    gap: 20px;
-}
-
-/* Chaque item = 1 ligne image + texte */
-#section1 .item {
-    display: flex;
-    align-items: center;
-    gap: 10px;      /* espace image ↔ texte */
+    align-items: flex-start;
+    padding: 30px 20px;
+    gap: 25px;
 }
 
 #section1 img {
-    width: 28px;
+    width: 32px;
+    margin-right: 12px;
 }
 
 #section1 h1 {
-    font-size: 14px;
+    font-size: 17px;
     font-weight: normal;
-    white-space: nowrap;  /* empêche la coupure */
+    display: inline-block;
+    vertical-align: middle;
 }
 
-
+#section1 img + h1 {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
 
 
 /* ------------------------------ */
@@ -46,42 +42,26 @@
 /* ------------------------------ */
 
 #section2 {
-    margin-left: 200px; /* adapté à la nouvelle width */
+    margin-left: 300px;
     padding: 20px 30px;
     background: #f7f3e9;
     border-bottom: 1px solid #e0dac9;
 
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    gap: 15px 25px;
 }
 
-/* Bloc des textes (à gauche, en colonne) */
 #section2 h2 {
     font-size: 16px;
     font-weight: normal;
     color: #3b342d;
-    display: block;
 }
 
 #section2 img {
     width: 28px;
+    vertical-align: middle;
 }
-
-/* Conteneur gauche = textes en colonne */
-#section2 .left {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-/* Conteneur droite = loupe + texte + panier + prix */
-#section2 .right {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
 
 
 /* ------------------------------ */
@@ -89,36 +69,43 @@
 /* ------------------------------ */
 
 #section3 {
-    margin-left: 200px;
-    padding: 20px;
+    margin-left: 300px;
+    padding: 25px 20px;
     background: #f5efe3;
     border-bottom: 1px solid #e2dacb;
+}
 
-    display: flex;
-    flex-wrap: nowrap;  /* toutes les catégories sur une seule ligne */
-    gap: 25px;
+#section3 > h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
 #section3 article {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     align-items: center;
-    width: 120px;
+    width: 150px;
+    margin: 10px;
     text-align: center;
 }
 
 #section3 img {
-    width: 40px;
+    width: 45px;
+    margin-bottom: 5px;
+}
+
+#section3 h1 {
+    font-size: 12px;
+    color: #5a4a39;
 }
 
 
-
 /* ------------------------------ */
-/*   SECTION 4 — PRODUITS         */
+/*   SECTION 4 — LISTE PRODUITS   */
 /* ------------------------------ */
 
 #section4 {
-    margin-left: 200px;
+    margin-left: 300px;
     padding: 25px 20px;
 
     display: grid;
@@ -134,7 +121,20 @@
     text-align: center;
 }
 
+#section4 h2 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+#section4 h3 {
+    font-size: 13px;
+    color: #6a645d;
+    margin-bottom: 8px;
+}
+
 #section4 img {
     width: 100%;
+    height: auto;
     border-radius: 6px;
+    margin-bottom: 10px;
 }
