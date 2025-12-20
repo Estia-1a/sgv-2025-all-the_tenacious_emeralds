@@ -54,6 +54,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    font-family: 'Arial', sans-serif;
 }
 
 /* Bloc des textes (à gauche, en colonne) */
