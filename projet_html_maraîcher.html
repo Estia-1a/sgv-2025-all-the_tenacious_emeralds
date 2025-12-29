@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Page Démonstration – Marchés Locaux</title>
+  <meta name="description" content="Maquette HTML/CSS simple et lisible pour un projet étudiant, présentant un réseau de marchés locaux." />
+
+  <style>
+    :root{
+      /* Couleurs principales */
+      --primary: #6E2A8A;       /* Violet moderne */
+      --primary-2: #7C3798;
+      --accent:  #E66A00;       /* Orange (badges/accents) */
+      --success: #2E7D32;       /* Vert pour boutons / validations */
+
+      /* Texte et fonds */
+      --bg: #ffffff;
+      --surface: #f7f7fb;       /* Légère teinte pour sections alternées */
+      --text: #222222;
+      --text-dim: #5f5f6a;
+
+      /* Bordures/ombres */
+      --border: #e5e6ea;
+      --shadow: 0 12px 30px rgba(23, 26, 31, .10);
+
+      /* Mise en forme */
+      --radius: 14px;
+      --radius-lg: 18px;
+      --max: 1100px;
+      --gap: 24px;
+
+      /* Typo */
+      --font: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      --font-size: 16px;
+
+      /* Vitesse d’animation */
+      --ease: cubic-bezier(.22,.61,.36,1);
+      --speed: .35s;
+    }
+
+    /* -------------------- Mode sombre automatique -------------------- */
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg: #0f1116;
+        --surface: #141823;
+        --text: #e6e7eb;
+        --text-dim: #b7bbc7;
+        --border: #202637;
+        --shadow: 0 14px 36px rgba(0,0,0,.45);
+        --primary: #a888ff;
+        --primary-2: #b99bff;
+        --accent:  #ff934d;
+        --success: #63d77a;
+      }
+    }
+
+    /* -------------------- Reset léger + base -------------------- */
+    *,*::before,*::after{ box-sizing: border-box }
+    html,body{ margin:0; padding:0 }
+    html{ scroll-behavior:smooth }
+    body{
+      font-family: var(--font);
+      font-size: var(--font-size);
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    img{ max-width:100%; display:block; }
+    a{ color: inherit; text-decoration: none; }
+    p{ margin: 0 0 1rem; }
+    ul{ margin: 0; padding: 0 0 0 1.1rem; }
+    strong{ font-weight: 700; }
+
+    /* Focus accessibles */
+    :focus-visible{
+      outline: 3px solid color-mix(in oklab, var(--primary) 65%, white);
+      outline-offset: 2px;
+      border-radius: 6px;
+    }
+
+    /* Réduction d’animations si demandée par l’utilisateur */
+    @media (prefers-reduced-motion: reduce){
+      *{ animation: none !important; transition: none !important; }
+    }
+
+    /* -------------------- Layout générique -------------------- */
+    .wrap{ max-width: var(--max); margin: 0 auto; padding: 0 18px; }
+    .section{ padding: 64px 0; }
