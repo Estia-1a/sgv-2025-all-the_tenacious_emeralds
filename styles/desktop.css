@@ -6,7 +6,7 @@
     position: fixed;
     left: 0;
     top: 0;
-    width: 260px;
+    width: 210px;
     height: 100vh;
     background: #faf7ef;
     border-right: 1px solid #e0d9c8;
@@ -36,20 +36,36 @@
     gap: 10px;
 }
 
+.item {
+    display: flex;         
+    align-items: center;    
+    gap: 12px;             
+}
+
+#section1 .item:first-child img {
+    width: 80px; 
+}
+
+#section1 .item:first-child h1 {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-left: -10px;
+}
 
 /* ------------------------------ */
 /*   SECTION 2 — HEADER MARCHÉ    */
 /* ------------------------------ */
 
 #section2 {
-    margin-left: 300px;
+    margin-left: 250px;
     padding: 20px 30px;
     background: #f7f3e9;
     border-bottom: 1px solid #e0dac9;
 
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 15px 25px;
+    gap: 10px 25px;
 }
 
 #section2 h2 {
@@ -58,9 +74,35 @@
     color: #3b342d;
 }
 
+
+.item {
+    display: flex;         
+    align-items: flex-end;    
+    gap: 12px;
+      
+}
+
 #section2 img {
-    width: 28px;
+    width: 50px;
+    height: 50px;
     vertical-align: middle;
+
+}
+.infos-marche {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.outil {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.outils-marche {
+    display: flex;
+    gap: -100px; 
+    justify-content: flex-end;
 }
 
 
@@ -69,15 +111,16 @@
 /* ------------------------------ */
 
 #section3 {
-    margin-left: 300px;
+    margin-left: 250px;
     padding: 25px 20px;
     background: #f5efe3;
     border-bottom: 1px solid #e2dacb;
 }
 
-#section3 > h1 {
-    font-size: 20px;
-    margin-bottom: 20px;
+#section3 h2 {
+    font-size: 17px;
+    margin-bottom: 0px;
+    font-weight: normal;
 }
 
 #section3 article {
@@ -90,12 +133,12 @@
 }
 
 #section3 img {
-    width: 45px;
+    width: 70px;
     margin-bottom: 5px;
 }
 
 #section3 h1 {
-    font-size: 12px;
+    font-size: 20px;
     color: #5a4a39;
 }
 
@@ -122,8 +165,9 @@
 }
 
 #section4 h2 {
-    font-size: 16px;
-    margin-bottom: 8px;
+    font-size: 20px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
 }
 
 #section4 h3 {
@@ -138,3 +182,4 @@
     border-radius: 6px;
     margin-bottom: 10px;
 }
+
