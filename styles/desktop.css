@@ -101,7 +101,7 @@
 
 .outils-marche {
     display: flex;
-    gap: -100px; 
+    gap: 100px; 
     justify-content: flex-end;
 }
 
@@ -183,3 +183,6 @@
     margin-bottom: 10px;
 }
 
+body {
+    font-family: Arial, sans-serif;
+}
