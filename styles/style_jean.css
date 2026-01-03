@@ -1,0 +1,383 @@
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* HEADER */
+.site-header {
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 1rem 2rem;
+}
+
+.header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 0.5rem;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.logo-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.brand-dot {
+    color: #6b8e23;
+}
+
+.primary-nav {
+    display: flex;
+    gap: 1.5rem;
+    flex: 1;
+    justify-content: center;
+}
+
+.primary-nav a {
+    text-decoration: none;
+    color: #6b8e23;
+    font-weight: 500;
+    padding: 0.6rem 1.2rem;
+    border: 2px solid #6b8e23;
+    border-radius: 25px;
+    transition: all 0.3s;
+    font-size: 0.95rem;
+}
+
+.primary-nav a:hover {
+    background: #6b8e23;
+    color: white;
+}
+
+.auth a {
+    background: #6b8e23;
+    color: white;
+    padding: 0.6rem 1.8rem;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.auth a:hover {
+    background: #556b2f;
+}
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    height: 600px;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"%3E%3Crect fill="%23e8e8e8" width="1200" height="600"/%3E%3C/svg%3E');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    max-width: 900px;
+    padding: 2rem;
+}
+
+.hero-formule-btn {
+    display: inline-block;
+    background: #7b3f7f;
+    color: white;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 4rem;
+    transition: background 0.3s;
+}
+
+.hero-formule-btn:hover {
+    background: #5d2f5f;
+}
+
+.hero-banner {
+    background: rgba(123, 63, 127, 0.95);
+    color: white;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.hero-banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.hero-banner p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* SECTION AVANTAGES */
+.avantages-section {
+    padding: 5rem 2rem;
+    background: white;
+}
+
+.avantages-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.avantages-title {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 2rem;
+    color: #7b3f7f;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.avantages-subtitle {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 1.8rem;
+    color: #7b3f7f;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-style: italic;
+}
+
+.arrow-decoration {
+    text-align: center;
+    font-size: 3rem;
+    color: #7b3f7f;
+    margin-bottom: 2rem;
+}
+
+.avantages-list {
+    list-style: none;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+}
+
+.avantages-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+.bullet {
+    width: 15px;
+    height: 15px;
+    background: #7b3f7f;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 0.5rem;
+}
+
+.avantages-list strong {
+    color: #7b3f7f;
+    font-size: 1.3rem;
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.avantages-list p {
+    color: #333;
+    font-size: 1.05rem;
+}
+
+/* BANDEAU */
+.bandeau {
+    background: #7b3f7f;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/* VIDEO SECTION */
+.video-section {
+    background: #e8e8e8;
+    padding: 5rem 2rem;
+}
+
+.video-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.video-title {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.video-underline {
+    width: 200px;
+    height: 3px;
+    background: #333;
+    margin: 0 auto 3rem;
+}
+
+.video-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+/* ETAPES SECTION */
+.etapes-section {
+    padding: 5rem 2rem;
+    background: white;
+}
+
+.etapes-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.etapes-title {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 1.8rem;
+    color: #d2691e;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.etapes-subtitle {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 1.6rem;
+    color: #d2691e;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-style: italic;
+}
+
+.etapes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.etape {
+    text-align: center;
+}
+
+.etape-number {
+    width: 80px;
+    height: 80px;
+    background: #d2691e;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0 auto 1.5rem;
+}
+
+.etape h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.etape p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.etape img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 968px) {
+    .header-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .primary-nav {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    .primary-nav a {
+        text-align: center;
+    }
+
+    .hero-banner h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-banner p {
+        font-size: 1.2rem;
+    }
+
+    .etapes-grid {
+        grid-template-columns: 1fr;
+    }
+}
